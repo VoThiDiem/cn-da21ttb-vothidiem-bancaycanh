@@ -11,5 +11,15 @@
 - Trình bày các công nghệ có thể áp dụng để phát triển hệ thống
 - Tìm hiểu về Postman để kiểm thử API	
 -Phân tích thiết kế hệ thống 
-- Thu thập các dữ liệu mẫu cho đề tài bán cây cảnh	
-
+- Thu thập các dữ liệu mẫu cho đề tài bán cây cảnh
+## Tuần 2: Từ 13/11/2024 đến 19/11/2024
+Viết báo cáo chương 2. Cơ sở lý thuyết
+- Trình bày các mô hình kiến trúc có thể áp dụng để phát triển hệ thống (Client-Server, MVC, ...)
+- Trình bày các công nghệ có thể áp dụng để phát triển hệ thống"
+## Tuần 3: Từ 20/11/2024 đến 26/11/2024
+Phân tích thiết kế hệ thống
+- Phân tích yêu cầu & thu thập các dữ liệu mẫu
+- Thiết kế cơ sở dữ liệu + trao đổi với giáo viên hướng dẫn
+- Thiết kế xử lý
+- Phác thảo giao diện và trải nghiệm người dùng
+- Viết báo cáo chương 3. Hiện thực hóa nghiên cứu (đặc tả yêu cầu hệ thống, thiết kế dữ liệu, thiết kế xử lý, thiết kế giao diện)"
