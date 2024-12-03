@@ -23,3 +23,8 @@ Phân tích thiết kế hệ thống
 - Thiết kế xử lý
 - Phác thảo giao diện và trải nghiệm người dùng
 - Viết báo cáo chương 3. Hiện thực hóa nghiên cứu (đặc tả yêu cầu hệ thống, thiết kế dữ liệu, thiết kế xử lý, thiết kế giao diện)"
+## Tuần 4: Từ 27/11/2024 đến 03/12/2024
+- Cài đặt front-end (trang chủ, trang sản phẩm, trang chi tiết sản phẩm, ...)
+- Cài đặt back-end (Xây dựng hệ thống quản lý ...)"
+## Tuần 5: Từ 04/12/2024 đến 10/12/2024
+  - Cài đặt back-end (Xây dựng hệ thống quản lý ...)
