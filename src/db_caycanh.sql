@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: localhost:3306
--- Thời gian đã tạo: Th10 22, 2024 lúc 12:26 PM
+-- Thời gian đã tạo: Th12 03, 2024 lúc 12:06 PM
 -- Phiên bản máy phục vụ: 8.0.30
 -- Phiên bản PHP: 8.1.10
 
@@ -73,7 +73,20 @@ INSERT INTO `address` (`id`, `user_id`, `province_id`, `district_id`, `ward_id`,
 (118, 21, 265, 2022, 620414, 'Điện Biên', 'Huyện Tuần Giáo', 'Xã Quài Nưa', 'frvrfb', '2024-11-21 01:50:49', '2024-11-21 01:50:49'),
 (119, 21, 253, 1926, 600605, 'Bạc Liêu', 'Huyện Đông Hải', 'Xã Điền Hải', 'Ấp An Chay', '2024-11-21 01:51:32', '2024-11-21 01:51:32'),
 (120, 21, 253, 1926, 600605, 'Bạc Liêu', 'Huyện Đông Hải', 'Xã Điền Hải', 'Ấp An Chay', '2024-11-21 01:52:56', '2024-11-21 01:52:56'),
-(121, 21, 264, 1989, 70314, 'Lai Châu', 'Huyện Phong Thổ', 'Xã Pa Vây Sử', 'Street Addresscèvr', '2024-11-21 01:53:30', '2024-11-21 01:53:30');
+(121, 21, 264, 1989, 70314, 'Lai Châu', 'Huyện Phong Thổ', 'Xã Pa Vây Sử', 'Street Addresscèvr', '2024-11-21 01:53:30', '2024-11-21 01:53:30'),
+(122, 60, 214, 2033, 580604, 'Trà Vinh', 'Huyện Trà Cú', 'Xã Đại An', 'Ấp An Chay', '2024-11-23 09:00:02', '2024-11-23 09:00:02'),
+(123, 21, 214, 2086, 580208, 'Trà Vinh', 'Huyện Càng Long', 'Xã Huyền Hội', 'Ấp An Chay', '2024-11-23 09:29:57', '2024-11-23 09:29:57'),
+(124, 18, 214, 2020, 580404, 'Trà Vinh', 'Huyện Tiểu Cần', 'Xã Hiếu Tử', 'Ấp An Chay', '2024-11-24 04:08:41', '2024-11-24 04:08:41'),
+(125, 18, 214, 2086, 580203, 'Trà Vinh', 'Huyện Càng Long', 'Xã An Trường A', 'Ấp An Chay', '2024-11-24 04:09:09', '2024-11-24 04:09:09'),
+(126, 21, 214, 2033, 580608, 'Trà Vinh', 'Huyện Trà Cú', 'Xã Kim Sơn', 'Ấp An Chay', '2024-11-24 06:11:10', '2024-11-24 06:11:10'),
+(127, 21, 214, 2086, 580208, 'Trà Vinh', 'Huyện Càng Long', 'Xã Huyền Hội', 'Ấp An Chay', '2024-11-24 06:11:57', '2024-11-24 06:11:57'),
+(128, 21, 214, 2086, 580206, 'Trà Vinh', 'Huyện Càng Long', 'Xã Đại Phước', 'Ấp An Chay', '2024-11-24 06:12:26', '2024-11-24 06:12:26'),
+(129, 21, 214, 2086, 580210, 'Trà Vinh', 'Huyện Càng Long', 'Xã Nhị Long', 'Ấp An Chay', '2024-11-24 08:09:34', '2024-11-24 08:09:34'),
+(130, 21, 214, 1911, 580513, 'Trà Vinh', 'Huyện Châu Thành', 'Xã Song Lộc', 'Ấp An Chay', '2024-11-24 08:10:39', '2024-11-24 08:10:39'),
+(131, 18, 214, 2033, 580605, 'Trà Vinh', 'Huyện Trà Cú', 'Xã Định An', 'Ấp An Chay', '2024-11-24 19:06:06', '2024-11-24 19:06:06'),
+(132, 18, 214, 2020, 580403, 'Trà Vinh', 'Huyện Tiểu Cần', 'Xã Hiếu Trung', 'Ấp An Chay', '2024-11-24 19:06:32', '2024-11-24 19:06:32'),
+(133, 21, 214, 1911, 58056, 'Trà Vinh', 'Huyện Châu Thành', 'Xã Hưng Mỹ', 'Ấp An Chay', '2024-11-24 22:57:44', '2024-11-24 22:57:44'),
+(134, 18, 214, 2033, 580608, 'Trà Vinh', 'Huyện Trà Cú', 'Xã Kim Sơn', 'Ấp An Chay', '2024-11-27 17:46:24', '2024-11-27 17:46:24');
 
 -- --------------------------------------------------------
 
@@ -95,10 +108,10 @@ CREATE TABLE `categories` (
 INSERT INTO `categories` (`id`, `name`, `created_at`, `updated_at`) VALUES
 (1, 'eligendi', '2024-06-22 10:14:19', '2024-06-22 10:14:19'),
 (2, 'assumenda', '2024-06-22 10:14:19', '2024-06-22 10:14:19'),
-(11, 'admin@gmail.com', '2024-10-26 07:38:06', '2024-10-26 19:48:58'),
-(18, 'Võ Diểm', '2024-10-26 19:39:40', '2024-10-26 19:49:29'),
-(19, 'admin', '2024-10-26 22:14:56', '2024-10-26 22:14:56'),
-(20, 'MA001', '2024-10-26 22:15:01', '2024-10-26 22:15:01');
+(11, 'danh mục a', '2024-10-26 07:38:06', '2024-12-01 08:47:23'),
+(18, 'Danh mục b', '2024-10-26 19:39:40', '2024-12-01 08:47:32'),
+(19, 'danh mục c', '2024-10-26 22:14:56', '2024-12-01 08:47:42'),
+(20, 'danh mục d', '2024-10-26 22:15:01', '2024-12-01 08:47:50');
 
 -- --------------------------------------------------------
 
@@ -184,7 +197,11 @@ INSERT INTO `images` (`id`, `path`, `product_id`, `status`, `created_at`, `updat
 (16, 'images/8gLbS1bDwul7I8ej9i71TEJpJN283EHNPOcrHD91.jpg', 12, 1, '2024-11-05 17:18:08', '2024-11-07 07:40:43'),
 (17, 'images/3CZ5nkIN8Ufw2xjSe6jqg9hN8iQIwksEPBEm8wQ0.png', 13, 1, '2024-11-05 18:35:21', '2024-11-05 18:35:21'),
 (23, 'images/Py8RJFJESt8azJcczSEC3m6M9IrtHPKGjA8DI1EI.jpg', 19, 1, '2024-11-06 07:35:18', '2024-11-07 07:42:01'),
-(27, 'images/Y7S7xrWtSBDHM9lYjpL5NdpJM1a1ulX7gwQwntMf.jpg', 10, 1, '2024-11-07 08:11:21', '2024-11-07 08:11:42');
+(27, 'images/Y7S7xrWtSBDHM9lYjpL5NdpJM1a1ulX7gwQwntMf.jpg', 10, 1, '2024-11-07 08:11:21', '2024-11-07 08:11:42'),
+(28, 'images/RJF8UnXqe1KOGvvHVZTm2nyxbPoBP11nXhCZLKCX.jpg', 27, 1, '2024-12-01 00:46:36', '2024-12-01 00:46:36'),
+(29, 'images/JdTx2VQurzlGxDCX1TNeJI68F2pcITyHThQlcW7i.jpg', 28, 1, '2024-12-01 00:47:03', '2024-12-01 00:47:03'),
+(30, 'images/lIrc4AzwZ21AY1dRTNJueEYWj9gWzqoyFEueHHNa.jpg', 29, 1, '2024-12-01 00:49:02', '2024-12-01 00:49:02'),
+(31, 'images/eAvH5EhGAZWrx9cMzFwaBSuUgqfQMFpeWFydvcDo.png', 30, 1, '2024-12-01 00:50:34', '2024-12-01 00:50:34');
 
 -- --------------------------------------------------------
 
@@ -324,16 +341,29 @@ INSERT INTO `orders` (`id`, `shipment_id`, `user_id`, `coupon_id`, `address_id`,
 (296, NULL, 21, NULL, 109, 22000, 50000, 2, 'COD', NULL, '2024-11-21 01:36:54', '2024-11-21 02:09:07'),
 (297, NULL, 21, NULL, 110, 22000, 115000, 2, 'COD', NULL, '2024-11-21 01:42:49', '2024-11-21 02:09:55'),
 (298, NULL, 21, NULL, 111, 22000, 115000, 2, 'COD', NULL, '2024-11-21 01:43:08', '2024-11-21 02:11:45'),
-(299, NULL, 21, NULL, 112, 22000, 115000, 0, 'COD', NULL, '2024-11-21 01:43:09', '2024-11-21 01:43:09'),
+(299, 'LDXRDD', 21, NULL, 112, 22000, 115000, 1, 'COD', NULL, '2024-11-21 01:43:09', '2024-11-24 21:49:42'),
 (300, NULL, 21, NULL, 113, 22000, 115000, 0, 'COD', NULL, '2024-11-21 01:45:36', '2024-11-21 01:45:36'),
-(301, NULL, 21, NULL, 114, 20500, 113500, 0, 'COD', NULL, '2024-11-21 01:46:20', '2024-11-21 01:46:20'),
-(302, NULL, 21, NULL, 115, 20500, 113500, 0, 'COD', NULL, '2024-11-21 01:47:17', '2024-11-21 01:47:17'),
-(303, NULL, 21, NULL, 116, 20500, 113500, 0, 'COD', NULL, '2024-11-21 01:48:49', '2024-11-21 01:48:49'),
-(304, NULL, 21, NULL, 117, 20500, 113500, 0, 'COD', NULL, '2024-11-21 01:49:38', '2024-11-21 01:49:38'),
+(301, NULL, 21, NULL, 114, 20500, 113500, 1, 'COD', NULL, '2024-11-21 01:46:20', '2024-11-23 09:28:42'),
+(302, 'LDXAK6', 21, NULL, 115, 20500, 113500, 1, 'COD', NULL, '2024-11-21 01:47:17', '2024-11-23 09:16:26'),
+(303, 'LDXAK9', 21, NULL, 116, 20500, 113500, 1, 'COD', NULL, '2024-11-21 01:48:49', '2024-11-23 09:07:52'),
+(304, NULL, 21, NULL, 117, 20500, 113500, 1, 'COD', NULL, '2024-11-21 01:49:38', '2024-11-23 09:29:02'),
 (305, NULL, 21, NULL, 118, 20500, 113500, 0, 'COD', NULL, '2024-11-21 01:50:49', '2024-11-21 01:50:49'),
 (306, NULL, 21, NULL, 119, 20500, 113500, 0, 'COD', NULL, '2024-11-21 01:51:32', '2024-11-21 01:51:32'),
-(307, NULL, 21, NULL, 120, 20500, 113500, 0, 'COD', NULL, '2024-11-21 01:52:56', '2024-11-21 01:52:56'),
-(308, NULL, 21, NULL, 121, 20500, 113500, 0, 'COD', NULL, '2024-11-21 01:53:30', '2024-11-21 01:53:30');
+(307, 'LDXAKP', 21, NULL, 120, 20500, 113500, 1, 'COD', NULL, '2024-11-21 01:52:56', '2024-11-23 09:26:57'),
+(308, NULL, 21, NULL, 121, 20500, 113500, 1, 'COD', NULL, '2024-11-21 01:53:30', '2024-11-23 09:29:16'),
+(309, 'LDXAKV', 60, NULL, 122, 22000, 71000, 1, 'COD', 'fdvbgf', '2024-11-23 09:00:02', '2024-11-23 09:12:51'),
+(310, 'LDX8GH', 21, NULL, 123, 22000, 28000, 1, 'COD', NULL, '2024-11-23 09:29:57', '2024-11-24 07:09:24'),
+(311, 'LDX8GT', 18, NULL, 124, 22000, 53000, 1, 'COD', 'dfdvf', '2024-11-24 04:08:41', '2024-11-24 06:09:15'),
+(312, 'LDX8GK', 18, NULL, 125, 22000, 67000, 1, 'COD', NULL, '2024-11-24 04:09:09', '2024-11-24 05:56:21'),
+(313, 'LDX8BH', 21, NULL, 126, 22000, 47000, 1, 'COD', NULL, '2024-11-24 06:11:10', '2024-11-24 08:02:32'),
+(314, 'LDX8BX', 21, NULL, 127, 22000, 90000, 1, 'COD', NULL, '2024-11-24 06:11:57', '2024-11-24 08:03:10'),
+(315, 'LDX8KB', 21, NULL, 128, 22000, 165000, 1, 'COD', NULL, '2024-11-24 06:12:26', '2024-11-24 08:04:35'),
+(316, 'LDXRDA', 21, NULL, 129, 22000, 28000, 1, 'COD', NULL, '2024-11-24 08:09:34', '2024-11-24 22:40:25'),
+(317, 'LDXR67', 21, NULL, 130, 22000, 28000, 1, 'COD', NULL, '2024-11-24 08:10:39', '2024-11-24 19:17:37'),
+(318, 'LDXRDT', 18, NULL, 131, 22000, 53000, 1, 'COD', NULL, '2024-11-24 19:06:06', '2024-11-24 22:18:16'),
+(319, 'LDXRDH', 18, NULL, 132, 22000, 108000, 1, 'COD', NULL, '2024-11-24 19:06:32', '2024-11-24 22:23:28'),
+(321, 'LDXRD8', 21, NULL, 133, 22000, 153000, 1, 'COD', 'vfdbgf', '2024-11-24 22:57:44', '2024-11-24 22:59:29'),
+(322, NULL, 18, NULL, 134, 22000, 222000, 0, 'COD', NULL, '2024-11-27 17:46:24', '2024-11-27 17:46:24');
 
 -- --------------------------------------------------------
 
@@ -382,7 +412,32 @@ INSERT INTO `order_details` (`id`, `order_id`, `product_id`, `quantity`, `unit_p
 (246, 305, 10, 3, 7000, '2024-11-21 01:50:49', '2024-11-21 01:50:49'),
 (247, 306, 10, 3, 7000, '2024-11-21 01:51:32', '2024-11-21 01:51:32'),
 (248, 307, 10, 3, 7000, '2024-11-21 01:52:56', '2024-11-21 01:52:56'),
-(249, 308, 10, 3, 7000, '2024-11-21 01:53:30', '2024-11-21 01:53:30');
+(249, 308, 10, 3, 7000, '2024-11-21 01:53:30', '2024-11-21 01:53:30'),
+(250, 309, 10, 4, 7000, '2024-11-23 09:00:02', '2024-11-23 09:00:02'),
+(251, 309, 12, 1, 30000, '2024-11-23 09:00:02', '2024-11-23 09:00:02'),
+(252, 310, 10, 1, 7000, '2024-11-23 09:29:57', '2024-11-23 09:29:57'),
+(253, 311, 10, 1, 7000, '2024-11-24 04:08:41', '2024-11-24 04:08:41'),
+(254, 311, 12, 1, 30000, '2024-11-24 04:08:41', '2024-11-24 04:08:41'),
+(255, 312, 19, 1, 50000, '2024-11-24 04:09:09', '2024-11-24 04:09:09'),
+(256, 313, 12, 1, 30000, '2024-11-24 06:11:10', '2024-11-24 06:11:10'),
+(257, 314, 10, 3, 7000, '2024-11-24 06:11:57', '2024-11-24 06:11:57'),
+(258, 314, 12, 2, 30000, '2024-11-24 06:11:57', '2024-11-24 06:11:57'),
+(259, 315, 10, 3, 7000, '2024-11-24 06:12:26', '2024-11-24 06:12:26'),
+(260, 315, 12, 1, 30000, '2024-11-24 06:12:26', '2024-11-24 06:12:26'),
+(261, 315, 13, 1, 60000, '2024-11-24 06:12:26', '2024-11-24 06:12:26'),
+(262, 315, 19, 1, 50000, '2024-11-24 06:12:26', '2024-11-24 06:12:26'),
+(263, 316, 10, 1, 7000, '2024-11-24 08:09:34', '2024-11-24 08:09:34'),
+(264, 317, 10, 1, 7000, '2024-11-24 08:10:39', '2024-11-24 08:10:39'),
+(265, 318, 10, 1, 7000, '2024-11-24 19:06:06', '2024-11-24 19:06:06'),
+(266, 318, 12, 1, 30000, '2024-11-24 19:06:06', '2024-11-24 19:06:06'),
+(267, 319, 10, 1, 7000, '2024-11-24 19:06:32', '2024-11-24 19:06:32'),
+(268, 319, 12, 1, 30000, '2024-11-24 19:06:32', '2024-11-24 19:06:32'),
+(269, 319, 13, 1, 60000, '2024-11-24 19:06:32', '2024-11-24 19:06:32'),
+(270, 321, 10, 1, 7000, '2024-11-24 22:57:44', '2024-11-24 22:57:44'),
+(271, 321, 12, 1, 30000, '2024-11-24 22:57:44', '2024-11-24 22:57:44'),
+(272, 321, 13, 1, 60000, '2024-11-24 22:57:44', '2024-11-24 22:57:44'),
+(273, 321, 19, 1, 50000, '2024-11-24 22:57:44', '2024-11-24 22:57:44'),
+(274, 322, 12, 8, 30000, '2024-11-27 17:46:24', '2024-11-27 17:46:24');
 
 -- --------------------------------------------------------
 
@@ -613,7 +668,32 @@ INSERT INTO `personal_access_tokens` (`id`, `tokenable_type`, `tokenable_id`, `n
 (191, 'App\\Models\\User', 60, 'auth_token', '9d1ab62986e8c29b623920a34db1c9d7fddd4f612c8636dd62f6ed874065639a', '[\"*\"]', NULL, NULL, '2024-11-20 21:33:31', '2024-11-20 21:33:31'),
 (192, 'App\\Models\\User', 18, 'auth_token', 'f7cbbc7316930f3d69a4c3d8cf126757664942589283e44e2cc0da5029132e3a', '[\"*\"]', NULL, NULL, '2024-11-20 23:06:01', '2024-11-20 23:06:01'),
 (193, 'App\\Models\\User', 21, 'auth_token', '7b37b11cae5bceda6b749a13e78d1f5bfd0c850c0682012c2d8ca9eeb0540708', '[\"*\"]', NULL, NULL, '2024-11-21 01:36:08', '2024-11-21 01:36:08'),
-(194, 'App\\Models\\User', 60, 'auth_token', 'c2a5e2451691d860adcf7d7de394a9000abf31d7a8c96187148a6f4943a86fe8', '[\"*\"]', NULL, NULL, '2024-11-21 03:44:51', '2024-11-21 03:44:51');
+(194, 'App\\Models\\User', 60, 'auth_token', 'c2a5e2451691d860adcf7d7de394a9000abf31d7a8c96187148a6f4943a86fe8', '[\"*\"]', NULL, NULL, '2024-11-21 03:44:51', '2024-11-21 03:44:51'),
+(195, 'App\\Models\\User', 18, 'auth_token', '3592a373bfff8eda1e4025529928a82085a4d1d3e1efe7ff40818ece3bfc765a', '[\"*\"]', NULL, NULL, '2024-11-23 07:44:12', '2024-11-23 07:44:12'),
+(196, 'App\\Models\\User', 60, 'auth_token', '5b09613d8621c8a3ccd535dd4ee92266406ffc2235182c481c6b9687d147773d', '[\"*\"]', NULL, NULL, '2024-11-23 08:59:35', '2024-11-23 08:59:35'),
+(197, 'App\\Models\\User', 18, 'auth_token', 'dda1fa3ad81c4ae6add6ec1d3d9ae6d31464c3949b9993eafbea07cf3999e8a0', '[\"*\"]', NULL, NULL, '2024-11-23 09:00:19', '2024-11-23 09:00:19'),
+(198, 'App\\Models\\User', 18, 'auth_token', 'f81b67d9d62171baf84da0666a2586f6d9e0431821768b7daf16cf14c1805636', '[\"*\"]', NULL, NULL, '2024-11-23 09:26:34', '2024-11-23 09:26:34'),
+(199, 'App\\Models\\User', 21, 'auth_token', '2a96cc68911b95061dded3a10a4fe9bf98f7eba8eefa19d29e83c803c3f682f7', '[\"*\"]', NULL, NULL, '2024-11-23 09:29:35', '2024-11-23 09:29:35'),
+(200, 'App\\Models\\User', 18, 'auth_token', 'ed483cc0020535643f72603f52d1fba6c77d4f63f74ae9231f55d50abc495dbc', '[\"*\"]', '2024-11-24 04:09:09', NULL, '2024-11-23 09:30:15', '2024-11-24 04:09:09'),
+(201, 'App\\Models\\User', 18, 'auth_token', 'c72a5b3f40ce05f22c2839df84b37e666dc2145efd218b70a1b977dda78f11c7', '[\"*\"]', NULL, NULL, '2024-11-24 04:09:42', '2024-11-24 04:09:42'),
+(202, 'App\\Models\\User', 21, 'auth_token', '6a44bad5f8aad671a1a201a18c24405525c63847cdad2a2a421eccf1e91f959a', '[\"*\"]', NULL, NULL, '2024-11-24 06:10:35', '2024-11-24 06:10:35'),
+(203, 'App\\Models\\User', 18, 'auth_token', '9b5374dd2b875a707a6981d22b1efc173ea62d416e943afdbc69f034ea4c33cb', '[\"*\"]', NULL, NULL, '2024-11-24 06:13:30', '2024-11-24 06:13:30'),
+(204, 'App\\Models\\User', 18, 'auth_token', '5a7a6830b0adbd8106438c5aa443e5f306ac4ab43d98763e4da72ca78e763dfe', '[\"*\"]', NULL, NULL, '2024-11-24 08:02:20', '2024-11-24 08:02:20'),
+(205, 'App\\Models\\User', 21, 'auth_token', '39cd22f60d9140c87b0b3ed795c47b2b5724e54850762135a3db8c5e628e184e', '[\"*\"]', NULL, NULL, '2024-11-24 08:09:01', '2024-11-24 08:09:01'),
+(206, 'App\\Models\\User', 18, 'auth_token', 'e28a79d989dddd34259e0cd8fb95ee031e9314c09494270d7bbcf0fa9cf25838', '[\"*\"]', '2024-11-24 19:06:32', NULL, '2024-11-24 08:11:08', '2024-11-24 19:06:32'),
+(207, 'App\\Models\\User', 18, 'auth_token', '9445649b2e35446413e58cafb70dfc8c866fd36241098adf4088fe500047597f', '[\"*\"]', NULL, NULL, '2024-11-24 19:10:26', '2024-11-24 19:10:26'),
+(208, 'App\\Models\\User', 21, 'auth_token', '51b4eafd0d32edf38d13aca62bdf5923722d0c913280059d09183b4a9d8b560e', '[\"*\"]', NULL, NULL, '2024-11-24 22:56:53', '2024-11-24 22:56:53'),
+(209, 'App\\Models\\User', 18, 'auth_token', '31bb3365168462667f6c6d769a204fd47bb9dba09209ecb5e3b9b65cefc57c5b', '[\"*\"]', NULL, NULL, '2024-11-24 22:58:34', '2024-11-24 22:58:34'),
+(210, 'App\\Models\\User', 18, 'auth_token', 'c91ccb8dd6a2f5e696335c1fb5fa96ea98f7754d9ae0a1117edaa7f444beb0c2', '[\"*\"]', NULL, NULL, '2024-11-25 01:15:48', '2024-11-25 01:15:48'),
+(211, 'App\\Models\\User', 18, 'auth_token', 'b9f20b063504e8b735c32e68fa412a8b8dbdb3e2b027476d3e8b7b876a309d50', '[\"*\"]', NULL, NULL, '2024-11-25 20:45:39', '2024-11-25 20:45:39'),
+(212, 'App\\Models\\User', 18, 'auth_token', '7a88eaa40d2561a808dfc474deb4d362f4ac92e8728d7b2413a9624deda2136e', '[\"*\"]', NULL, NULL, '2024-11-26 00:19:28', '2024-11-26 00:19:28'),
+(213, 'App\\Models\\User', 18, 'auth_token', 'f836f6470e337a3872084cc7a057518d181004d09768ba86f9e124e86c3a8e62', '[\"*\"]', '2024-11-27 17:46:21', NULL, '2024-11-26 05:42:56', '2024-11-27 17:46:21'),
+(214, 'App\\Models\\User', 18, 'auth_token', 'a1e8bbc934c4a67456273d8fadd2882bd3294e7fe54f28ad2ee48f5b83f5ca44', '[\"*\"]', NULL, NULL, '2024-11-27 19:05:01', '2024-11-27 19:05:01'),
+(215, 'App\\Models\\User', 18, 'auth_token', '548eb301ee99666d10ab57663d4cb8639125318512bd0bde1779f18f10440148', '[\"*\"]', NULL, NULL, '2024-12-01 00:12:01', '2024-12-01 00:12:01'),
+(216, 'App\\Models\\User', 18, 'auth_token', 'a486c032d8c753be9ea00255bfcc612b8acbc3d6aa244152e8ba1482a72203e0', '[\"*\"]', NULL, NULL, '2024-12-01 00:45:32', '2024-12-01 00:45:32'),
+(217, 'App\\Models\\User', 18, 'auth_token', '6d1d2852b8e61ef810fc00b24c8f432b912ce4ce4079e95041361913d6d3d214', '[\"*\"]', NULL, NULL, '2024-12-01 04:47:21', '2024-12-01 04:47:21'),
+(218, 'App\\Models\\User', 18, 'auth_token', 'cba6df4747e4129d9a02c5557ad165c9e96d3fcc4e0cd3e02035a7c29b691b79', '[\"*\"]', NULL, NULL, '2024-12-02 00:42:29', '2024-12-02 00:42:29'),
+(219, 'App\\Models\\User', 18, 'auth_token', '87cf47d460bd10c5baba47e75f630fb7311fb298ce8f62d5422c2b75bb6297d0', '[\"*\"]', NULL, NULL, '2024-12-02 02:13:18', '2024-12-02 02:13:18');
 
 -- --------------------------------------------------------
 
@@ -626,7 +706,7 @@ CREATE TABLE `products` (
   `name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   `category_id` int UNSIGNED NOT NULL,
   `description` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
-  `detail_description` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `detail_description` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
   `original_price` int DEFAULT NULL,
   `unit_price` int NOT NULL,
   `promotion_price` int DEFAULT NULL,
@@ -642,10 +722,14 @@ CREATE TABLE `products` (
 --
 
 INSERT INTO `products` (`id`, `name`, `category_id`, `description`, `detail_description`, `original_price`, `unit_price`, `promotion_price`, `quantity`, `hot`, `unit`, `created_at`, `updated_at`) VALUES
-(10, 'sản phẩm a', 11, 'chủ quyềnbgf', '<p>ghgnhnhyzcx cxbgbg</p>', 5000, 7000, 6000, 37, NULL, NULL, '2024-11-05 07:51:20', '2024-11-21 04:02:34'),
-(12, 'sản phẩm b', 19, 'Mô tả sản phẩm sửa', '<p>mô tả cho ảnh 1</p>', 20000, 30000, 25000, 110, NULL, NULL, '2024-11-05 17:18:08', '2024-11-21 04:02:34'),
-(13, 'sản phẩm c', 1, 'sản phẩm 2', '<p>mô tả chi tiết sản phẩm 2</p>', 50000, 60000, 55000, 65, NULL, NULL, '2024-11-05 18:35:21', '2024-11-21 04:02:34'),
-(19, 'sản phẩm d', 18, 'bgb', '<p>bgbgh</p>', 40000, 50000, 45000, 35, NULL, NULL, '2024-11-06 07:35:18', '2024-11-21 04:02:33');
+(10, 'sản phẩm a', 1, 'chủ quyềnbgf', '<p>ghgnhnhyzcx cxbgbg</p>', 5000, 7000, 6000, 24, NULL, NULL, '2024-11-05 07:51:20', '2024-11-24 22:57:44'),
+(12, 'sản phẩm b', 19, 'Mô tả sản phẩm sửa', '<p>mô tả cho ảnh 1</p>', 20000, 30000, 25000, 97, NULL, NULL, '2024-11-05 17:18:08', '2024-11-27 17:46:24'),
+(13, 'sản phẩm c', 1, 'sản phẩm 2', '<p>mô tả chi tiết sản phẩm 2</p>', 50000, 60000, 55000, 66, NULL, NULL, '2024-11-05 18:35:21', '2024-11-24 22:57:44'),
+(19, 'sản phẩm d', 18, 'bgb', '<p>bgbgh</p>', 40000, 50000, 45000, 32, NULL, NULL, '2024-11-06 07:35:18', '2024-11-24 22:57:44'),
+(27, 'sản phẩm mới nhất', 2, 'chủ quyền3', '<p>xdscs</p>', NULL, 6000, 7000, 5, NULL, NULL, '2024-12-01 00:46:36', '2024-12-01 00:46:36'),
+(28, 'admin', 2, 'chủ quyền3', '<p>jhhh</p>', NULL, 60000, 7000, 0, NULL, NULL, '2024-12-01 00:47:03', '2024-12-01 00:47:03'),
+(29, 'sp e', 11, 'chủ quyền', '<p>lkj</p>', NULL, 60000, 13650000, 0, NULL, NULL, '2024-12-01 00:49:02', '2024-12-01 08:48:23'),
+(30, 'sp f', 11, 'chủ quyền3', '<p>cdcd</p>', NULL, 6005, 7000, 0, NULL, NULL, '2024-12-01 00:50:34', '2024-12-01 08:48:34');
 
 -- --------------------------------------------------------
 
@@ -718,6 +802,33 @@ INSERT INTO `slides` (`id`, `title`, `description`, `image`, `created_at`, `upda
 -- --------------------------------------------------------
 
 --
+-- Cấu trúc bảng cho bảng `statistics`
+--
+
+CREATE TABLE `statistics` (
+  `id` int NOT NULL,
+  `order_date` varchar(255) NOT NULL,
+  `sales` int NOT NULL,
+  `profit` int NOT NULL,
+  `quantity` int NOT NULL,
+  `total_order` int NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Đang đổ dữ liệu cho bảng `statistics`
+--
+
+INSERT INTO `statistics` (`id`, `order_date`, `sales`, `profit`, `quantity`, `total_order`, `created_at`, `updated_at`) VALUES
+(22, '2024-11-21', 115000, 100000, 3, 1, '2024-11-24 22:17:48', '2024-11-24 22:17:48'),
+(23, '2024-11-25', 314000, 99000, 9, 3, '2024-11-24 22:18:16', '2024-11-24 22:59:29'),
+(24, '2024-11-24', 56000, 46000, 2, 2, '2024-11-24 22:28:52', '2024-11-24 22:40:25'),
+(69, '2024-10-24', 56000, 46000, 2, 2, '2024-11-24 22:28:52', '2024-11-24 22:40:25');
+
+-- --------------------------------------------------------
+
+--
 -- Cấu trúc bảng cho bảng `users`
 --
 
@@ -744,10 +855,10 @@ CREATE TABLE `users` (
 INSERT INTO `users` (`id`, `username`, `name`, `email`, `phone`, `gender`, `password`, `role_id`, `avatar`, `created_at`, `updated_at`, `email_verified_at`, `email_verification_token`) VALUES
 (14, 'ADXDSSC', 'da21ttb', 'vodiem302@gmail.com', NULL, NULL, '$2y$10$nKjbxv60ZDPZIM7J53XUZ.TdlfvcsC1d6kOLcZ6Z5ECMF9WUkOt2i', 2, NULL, '2024-07-09 00:52:27', '2024-07-17 05:34:21', NULL, NULL),
 (16, 'Võ Thị Diểm', 'chinchin', 'vodiem3979@gmail.com', '0749375396', 'nữ', '$2y$10$FA3OG2qIbZY.CHgOU8mfze1.dAHWlZl.4LoaT9PNnAIFVyuWTzd1q', 2, NULL, '2024-07-10 07:35:03', '2024-10-20 06:50:19', NULL, 'eAlJeuj4eBFOm0Oy7xvN8vYAZCVWqjyc6ATFmqpDfZzWCFtXpNh58aVpo3DD'),
-(18, 'admin', 'admin', 'admin@gmail.com', '0000000000', 'nữ', '$2y$10$VlD3gMrGIO6N5HuBD4SFPOpHdmENEtRVU/qqYb7X1CE2TtGga01O.', 1, '', '2024-07-11 00:54:30', '2024-11-15 00:04:27', NULL, NULL),
+(18, 'admin', 'Võ Thị Diểm', 'admin@gmail.com', '0949375396', 'nữ', '$2y$10$VlD3gMrGIO6N5HuBD4SFPOpHdmENEtRVU/qqYb7X1CE2TtGga01O.', 1, '', '2024-07-11 00:54:30', '2024-11-27 17:46:24', NULL, NULL),
 (19, 'Nguyễn Văn A', NULL, 'vanA@gmail.com', NULL, NULL, '$2y$10$I509J3/pALPmnWWuCKxNw.JZ5UN3GKMvGdvqsoOo0PWlgzHOAGG9q', 2, NULL, '2024-07-11 01:24:52', '2024-07-11 01:24:52', NULL, NULL),
 (20, 'in', NULL, 'i@gmail.com', NULL, NULL, '$2y$10$j27lwOzxBU9Vkw451liSteKq/PlijoQ6sqHLUzPiX1n7O2Nyxro1C', 2, NULL, '2024-07-11 20:37:16', '2024-07-15 07:41:37', NULL, NULL),
-(21, 'user', 'Trần Văn B', 'user@gmail.com', '0949375394', NULL, '$2y$10$cqyYR/cxny/ahMYHCBZp5.2T9vECbLIldl8/R2k82SVtqzJTpMk.W', 2, 'https://via.placeholder.com/640x480.png/005577?text=id', '2024-07-15 07:36:52', '2024-11-21 01:36:54', NULL, NULL),
+(21, 'user', 'Võ Thị Diểm', 'user@gmail.com', '0917424535', NULL, '$2y$10$cqyYR/cxny/ahMYHCBZp5.2T9vECbLIldl8/R2k82SVtqzJTpMk.W', 2, 'https://via.placeholder.com/640x480.png/005577?text=id', '2024-07-15 07:36:52', '2024-11-24 22:57:44', NULL, NULL),
 (25, 'user2', NULL, 'user2@gmail.com', NULL, NULL, '$2y$10$KWFrEB6FYxgj5giN6VkQQuSE6dgS67miBilTHYxp1B4OIY8yqOLxW', 2, NULL, '2024-07-15 19:38:09', '2024-07-15 19:38:09', NULL, NULL),
 (26, 'chinchin', 'admin', 'user1@gmail.com', NULL, 'nữ', '$2y$10$aC4E2qipam.nnXtEoWYeouhmm.MXPPTqxCwtbzjC05psAVG6A6Gui', 2, '', '2024-07-21 02:54:50', '2024-07-21 06:41:43', NULL, NULL),
 (34, 'Trần Văn A', NULL, 'tranvana@gmail.com', '0274928394', NULL, '$2y$10$aS5vMIHHPLbxYHJVnne8VuK.slizpXzpFbQx5Yiilbtlibc4wpCie', 2, NULL, '2024-10-02 00:52:46', '2024-10-02 00:52:46', NULL, NULL),
@@ -885,6 +996,12 @@ ALTER TABLE `slides`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Chỉ mục cho bảng `statistics`
+--
+ALTER TABLE `statistics`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Chỉ mục cho bảng `users`
 --
 ALTER TABLE `users`
@@ -900,7 +1017,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT cho bảng `address`
 --
 ALTER TABLE `address`
-  MODIFY `id` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=122;
+  MODIFY `id` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=135;
 
 --
 -- AUTO_INCREMENT cho bảng `categories`
@@ -930,7 +1047,7 @@ ALTER TABLE `failed_jobs`
 -- AUTO_INCREMENT cho bảng `images`
 --
 ALTER TABLE `images`
-  MODIFY `id` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
+  MODIFY `id` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
 
 --
 -- AUTO_INCREMENT cho bảng `migrations`
@@ -954,25 +1071,25 @@ ALTER TABLE `news_types`
 -- AUTO_INCREMENT cho bảng `orders`
 --
 ALTER TABLE `orders`
-  MODIFY `id` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=309;
+  MODIFY `id` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=323;
 
 --
 -- AUTO_INCREMENT cho bảng `order_details`
 --
 ALTER TABLE `order_details`
-  MODIFY `id` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=250;
+  MODIFY `id` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=275;
 
 --
 -- AUTO_INCREMENT cho bảng `personal_access_tokens`
 --
 ALTER TABLE `personal_access_tokens`
-  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=195;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=220;
 
 --
 -- AUTO_INCREMENT cho bảng `products`
 --
 ALTER TABLE `products`
-  MODIFY `id` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+  MODIFY `id` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
 
 --
 -- AUTO_INCREMENT cho bảng `product_comments`
@@ -991,6 +1108,12 @@ ALTER TABLE `roles`
 --
 ALTER TABLE `slides`
   MODIFY `id` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
+-- AUTO_INCREMENT cho bảng `statistics`
+--
+ALTER TABLE `statistics`
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=70;
 
 --
 -- AUTO_INCREMENT cho bảng `users`
